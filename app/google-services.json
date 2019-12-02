@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "632381209326",
+    "firebase_url": "https://nariotp.firebaseio.com",
+    "project_id": "nariotp",
+    "storage_bucket": "nariotp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632381209326:android:a07747bf204a2b070291ff",
+        "android_client_info": {
+          "package_name": "com.hashcodes.narishakti"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "632381209326-b4itleq7u0fljs5qqv6dln1u54mh9kgo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hashcodes.narishakti",
+            "certificate_hash": "1d935c105b779dbf3413b4d2b2e1ee99cc9b2efa"
+          }
+        },
+        {
+          "client_id": "632381209326-ghm4kllm3404r9f2s9ehc6lojdv3oo1p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNfXcB8e2lkc3PTG7ezS8_SSL9_2Vr8t8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "632381209326-ghm4kllm3404r9f2s9ehc6lojdv3oo1p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

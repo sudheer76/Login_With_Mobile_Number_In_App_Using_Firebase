@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightGray"
+    tools:context=".Login_Screen">
+
+    <ImageButton
+        android:id="@+id/login_back_btn"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/back_arrow_button" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/login_back_btn"
+            android:layout_margin="40dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/Black"
+                android:textSize="16sp"
+                android:text="Enter valid mobile number"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:padding="8dp"
+                android:background="@drawable/border"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/Black"
+                    android:text="+91 - "/>
+
+                <EditText
+                    android:id="@+id/login_get_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:background="@null"
+                    android:maxLength="10"
+                    android:hint="Mobile number"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-thin"
+                android:padding="4dp"
+                android:text="*Please do not share your OTP with others."
+                android:textColor="@color/Black"
+                android:textSize="8dp" />
+
+        </LinearLayout>
+
+            <Button
+                android:id="@+id/login_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="36dp"
+                android:layout_marginEnd="10dp"
+                android:text="Next"
+                android:background="@color/transprent"
+                android:foreground="@drawable/border"/>
+
+</RelativeLayout>

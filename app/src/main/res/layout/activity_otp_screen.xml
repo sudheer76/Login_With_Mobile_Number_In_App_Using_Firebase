@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LightGray"
+    tools:context=".OTP_Screen">
+
+    <ImageButton
+        android:id="@+id/otp_back_btn"
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="26dp"
+        android:src="@drawable/back_arrow_button" />
+
+        <LinearLayout
+            android:id="@+id/otp_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/otp_back_btn"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/smartphone"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PLEASE ENTER"
+                android:textColor="@color/Black"
+                android:textSize="22sp"
+                android:layout_marginBottom="6dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="THE ONE TIME PASSWORD THAT"
+                android:textSize="10sp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="GET FROM SMS"
+                android:textSize="10sp"
+                android:layout_marginBottom="6dp"
+                android:textStyle="bold"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:padding="8dp"
+                    android:layout_marginTop="25dp"
+                    android:orientation="horizontal"
+                    android:background="@drawable/border">
+                    <EditText
+                        android:id="@+id/otp_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:inputType="number"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:textSize="14sp"
+                        android:background="@null"
+                        android:maxLength="6"
+                        android:hint="Enter your OTP"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-thin"
+                    android:padding="4dp"
+                    android:text="*Please do not share your OTP with others."
+                    android:textColor="@color/Black"
+                    android:textSize="8dp" />
+
+        </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/otp_prograssbar"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/otp_layout"
+                android:layout_centerHorizontal="true"
+                android:visibility="gone"
+                android:layout_marginTop="60dp"/>
+
+            <Button
+                android:id="@+id/otp_next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="36dp"
+                android:layout_marginEnd="10dp"
+                android:text="Next"
+                android:background="@color/transprent"
+                android:foreground="@drawable/border"/>
+
+</RelativeLayout>
